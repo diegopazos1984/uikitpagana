@@ -1,0 +1,37 @@
+# Dependencias
+/node_modules
+/vendor
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de entorno
+.env
+.env.local
+.env.development
+.env.production
+
+# Archivos de IDE y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos de compilación
+/dist
+/build
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+*.swp
+*~
+
+# Archivos de respaldo
+*.bak
+*.backup
+
+# Archivos de caché
+.cache/
