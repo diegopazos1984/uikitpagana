@@ -1,0 +1,133 @@
+.uikit-container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: white;
+  padding: 2rem;
+  border-right: 1px solid #E0E0E0;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 2rem;
+}
+
+.nav-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--gray-900);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-item.active {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+.main-content {
+  padding: 3rem;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.color-item {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.color-preview {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  padding: 1.5rem;
+}
+
+.color-info {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.color-name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--gray-900);
+}
+
+.color-hex {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--gray-900);
+  opacity: 0.8;
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2rem;
+}
+
+.icon-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    border-radius: 16px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.icon-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.12);
+    background-color: var(--gray-100);
+}
+
+.icon {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.icon-item:hover .icon {
+    transform: scale(1.1);
+}
+
+.icon-name {
+    font-size: 1.25rem;
+    color: var(--gray-900);
+    text-align: center;
+    font-weight: 500;
+}

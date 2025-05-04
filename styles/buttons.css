@@ -1,0 +1,63 @@
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
+
+.button-row {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 160px;
+    border: none;
+}
+
+/* Botón Primario */
+.btn-primary {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: #2699E6;
+    transform: translateY(-2px);
+}
+
+/* Botón Secundario */
+.btn-secondary {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+}
+
+.btn-secondary:hover {
+    background-color: #003C8A;
+    transform: translateY(-2px);
+}
+
+/* Botón Outline */
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+}
+
+.btn-outline:hover {
+    background-color: rgba(56, 182, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Estados deshabilitados */
+.btn[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none !important;
+}
